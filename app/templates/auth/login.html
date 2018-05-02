@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    {{ _('Sign In') }}
+    {{ wtf.quick_form(form) }}
+
+    {{ _('New User?') }} {{ _('Click to Register!') }}
+
+    {{ _('Forgot Your Password?') }} {{ _('Click to Reset It') }}
+{% endblock %}
