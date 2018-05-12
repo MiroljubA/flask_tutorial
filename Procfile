@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn -w microblog:app
+web: flask db upgrade; gunicorn -w 1 microblog:app
